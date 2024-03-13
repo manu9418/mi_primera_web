@@ -1,0 +1,307 @@
+ol,
+ul{
+    list-style: none; /* remove dots of lists*/
+}
+
+a{
+    text-decoration: none; /* remove ____ */
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: white;
+}
+
+div.container {
+    color: blue;
+    background-color: whitesmoke;
+}
+
+header{
+    position: fixed;
+    display:flex;
+    background-color: rgba(34,33,31,0.85);
+    align-items: center;
+    justify-content: flex-start;
+    color:white;
+    z-index: 10;
+    width: 100%;
+    margin-top: -90px;
+}
+
+
+main#seccion-principal{
+    padding: 0px;
+    margin-top: 70px;
+}
+
+/*
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+*/
+
+
+
+.parrafo2{
+    color: black;
+}
+
+/* id del header
+#hnow{color: white;}
+*/
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* list to row */
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+    color: white;
+}
+
+/* icon nube */
+header a i {
+   color:white;
+   font-size: 3em;
+   padding:0.5em; 
+}
+
+#seccion-principal{
+    background-color: black;
+    padding: 1px;
+}
+
+.seccion-1{
+    background-color: whitesmoke;
+    color: brown;
+    display:flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div.acerca-imagen{
+    background-color: springgreen;
+    display: flex;} */
+
+.section-2{
+    background-color: yellow;
+    padding: 0px;
+    margin: 0px;
+}
+
+.section-2 img{
+    height: 90%;
+    width: 100%;
+}
+
+body div main aside div p{
+    color: yellow;
+}
+
+section.frames div{
+    padding:3em;
+    display: flex;
+    justify-content: center;
+    gap:2em;
+    color: white;
+}
+
+section.frames div div.card{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgreen;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.frames div div.card div.image-card{
+    border: 4px dotted;
+    border-radius: 5%;
+}
+
+section.framestwo div.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+section.framestwo div.container div.card-container{
+    display:flex;
+    margin: 5px;
+    justify-content: center;
+    width: 20%;
+}
+
+section.framestwo div.container div.card-container div.card{
+    border: 4px dotted;
+    border-radius: 5%;
+    padding:5px;
+    height: 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section.framestwo div.container div.card-container div.card div.image-container{
+    border: 4px dotted;
+    border-radius: 5%;
+    width:80%;
+    height:60%;
+}
+
+section.framestwo div.container div.card-container div.card .text{
+    font-size: 32px;
+    width:80%;
+    text-align: center;
+}
+
+
+
+
+.redes{
+    background-color: rgb(32, 52, 70);
+    color: whitesmoke;
+    justify-content: center;
+}
+
+footer a i {
+    color: white;
+    font-size: 3em;
+    padding:0.5em; 
+ }
+
+footer ul,
+footer h3{
+    display: flex;
+    justify-content: center;
+    margin:0;
+}
+
+footer h3{
+    padding:10px;
+    /*position:relative;*/
+    left: 0.8em;
+}
+
+
+
+
+@media (max-width:768px){
+    
+    header{
+        background-color: rgb(9, 32, 73);
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    /* header{
+        display:flex;
+        background-color: rgba(34,33,31,0.85);
+        align-items: center;
+        justify-content: flex-start;
+        color:white;
+    } */
+
+    header nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(75, 123, 212);
+
+        top:80px;
+        left:0%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left:100;
+        display: block;
+    }
+
+    header nav ul li{
+        display: block;
+        line-height:50px;
+        font-size: 30px;
+    }
+
+    section.framestwo div.container div.card-container{
+        width:10%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/* ------------- Formulario ------------- */
+  
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 93%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]{
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 95%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
